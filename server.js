@@ -1,4 +1,4 @@
-import { Server, Room } from "colyseus";
+import { Server } from "colyseus"
 import {WebSocketTransport} from "@colyseus/ws-transport"
 import express from "express";
 import cors from "cors";
@@ -8,7 +8,7 @@ import ChatRoom from "./chatRoom.js";
 
 
 // configure port
-const port = process.env.port || 3000;
+const port = process.env.port || 8080;
 const app = express();
 
 //middleware
